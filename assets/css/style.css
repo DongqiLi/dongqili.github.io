@@ -243,21 +243,34 @@ a:hover { color: var(--accent-dark); }
 /* Intro portrait */
 .intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 190px;
-  gap: 46px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  gap: 40px;
+  align-items: start;
+}
+.intro-photo {
+  width: 150px;
+  justify-self: end;
 }
 .intro-photo img {
   display: block;
-  width: 190px;
+  width: 150px;
+  max-width: 150px;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center 24%;
   border-radius: 5px;
   border: 1px solid var(--line);
 }
-@media (max-width: 720px) {
-  .intro-grid { grid-template-columns: 1fr; gap: 28px; }
-  .intro-photo { order: -1; }
-  .intro-photo img { width: 150px; }
+@media (max-width: 650px) {
+  .intro-grid { grid-template-columns: 1fr; gap: 24px; }
+  .intro-photo {
+    order: -1;
+    width: 125px;
+    justify-self: start;
+  }
+  .intro-photo img {
+    width: 125px;
+    max-width: 125px;
+  }
 }
