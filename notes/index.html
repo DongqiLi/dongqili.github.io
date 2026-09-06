@@ -1,81 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Research notes by Dongqi Li on stochastic-series-expansion quantum Monte Carlo and the black-hole information paradox through holographic entanglement entropy.">
-  <title>Research Notes | Dongqi Li</title>
-  <link rel="canonical" href="https://dongqili.github.io/notes/">
-  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/css/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Research notes by Dongqi Li on stochastic-series-expansion quantum Monte Carlo and the black-hole information paradox through holographic entanglement entropy." name="description"/>
+<title>Research Notes | Dongqi Li</title>
+<link href="https://dongqili.github.io/notes/" rel="canonical"/>
+<link href="../assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="../">Dongqi Li</a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a class="active" href="../notes/">Research Notes</a>
-      <a href="../code/">Code</a>
-      <a class="cv-link" href="../assets/cv/Dongqi_Li_Academic_CV.pdf">CV</a>
-    </nav>
-  </div>
+<div class="container nav">
+<a class="brand" href="../">Dongqi Li</a>
+<nav aria-label="Primary navigation" class="nav-links">
+<a class="active" href="../notes/">Research Notes</a>
+<a href="../code/">Code</a>
+<a class="cv-link" href="../assets/cv/Dongqi_Li_Academic_CV.pdf">CV</a>
+</nav>
+</div>
 </header>
 <main>
-  <section class="subhero">
-    <div class="container">
-      <a class="back" href="../">← Home</a>
-      <h1>Research Notes</h1>
-      <p>Two longer-form notes paired with the code projects on this site: one on the stochastic-series-expansion QMC algorithm and one on the black-hole information paradox through holographic entanglement calculations.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <article class="note" id="qmc">
-        <span class="status">Planned technical note</span>
-        <h2>Stochastic-series-expansion quantum Monte Carlo</h2>
-        <p>A step-by-step introduction to the SSE formulation used in my spin–valley calculations. The emphasis will be on how the algorithm is actually constructed: from the high-temperature expansion and operator-string representation to linked vertices, Monte Carlo updates, and estimators for thermodynamic observables.</p>
-        <ul class="note-outline">
-          <li>Partition-function expansion and the operator-string configuration space</li>
-          <li>Bond decomposition, diagonal updates, and the no-branching basis</li>
-          <li>Directed-loop updates and open-walk updates when transverse fields break spin conservation</li>
-          <li>Counting estimators, winding numbers, and the helicity modulus</li>
-          <li>Binning, finite-size analysis, and BKT transition-temperature extraction</li>
-        </ul>
-        <p class="paired-link">Paired project: <a href="../code/#qmc">Spin–valley SSE quantum Monte Carlo →</a></p>
-      </article>
-
-      <article class="note" id="black-hole">
-        <span class="status">Planned explanatory note</span>
-        <h2>Black-hole information paradox through holographic entanglement entropy</h2>
-        <p>An accessible route from holographic entanglement entropy to the Page curve and island prescription. The note will focus on how competing Ryu–Takayanagi / quantum-extremal surfaces are calculated and how the same framework changes in AdS/BCFT, codimension-two brane, higher-curvature, and cone-holography settings.</p>
-        <ul class="note-outline">
-          <li>Entanglement entropy, extremal surfaces, and generalized entropy</li>
-          <li>The Page curve and why semiclassical Hawking radiation creates an information problem</li>
-          <li>Island saddles and competition between extremal surfaces</li>
-          <li>Codimension-two branes, AdS/BCFT, curvature-squared gravity, and cone holography</li>
-          <li>Numerical strategies for time-dependent extremal-surface calculations</li>
-        </ul>
-        <p class="paired-link">Paired project: <a href="../code/#black-hole">Holographic entanglement and Page-curve numerics →</a></p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container section-title-row">
-      <div class="section-label">Publications</div>
-      <div class="section-content">
-        <h2>Background for the holography note</h2>
-        <p class="section-intro">The first three papers below are directly connected to the island / Page-curve program. The 2019 paper reflects my earlier work with AdS/CFT and holographic renormalization.</p>
-        <div class="related-list">
-          <div class="related-item"><span>2023</span><a href="https://arxiv.org/abs/2303.10958">Massless Entanglement Islands in Cone Holography ↗</a></div>
-          <div class="related-item"><span>2022</span><a href="https://arxiv.org/abs/2208.11982">Island on Codimension-Two Branes in AdS/dCFT ↗</a></div>
-          <div class="related-item"><span>2022</span><a href="https://arxiv.org/abs/2202.03304">AdS/BCFT and Island for Curvature-Squared Gravity ↗</a></div>
-          <div class="related-item"><span>2019</span><a href="https://arxiv.org/abs/1904.07017">Anomalous Current Due to Weyl Anomaly for Conformal Field Theory ↗</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="subhero">
+<div class="container">
+<a class="back" href="../">← Home</a>
+<h1>Research Notes</h1>
+<p>Longer-form notes on current and previous research. Planned topics include neural quantum states for anyons, the stochastic-series-expansion QMC algorithm, and the black-hole information paradox through holographic entanglement calculations.</p>
+</div>
+</section>
+<section class="section">
+<div class="container"><article class="note" id="anyon"><span class="status">Planned research note</span><h2>Neural quantum states for anyons</h2><p>A conceptual and technical introduction to variational neural-network wave functions for Abelian anyons in two-dimensional harmonic traps. The note will focus on how fractional exchange statistics can be handled in the bosonic gauge, how short-distance structure is separated with a Jastrow transformation, and how permutation-symmetric self-attention can represent the remaining many-body correlations.</p><ul class="note-outline"><li>Exchange statistics in two dimensions and the bosonic-gauge Hamiltonian</li><li>Short-distance behavior and the anyonic Jastrow transformation</li><li>Center-of-mass separation in a harmonic trap</li><li>Permutation-equivariant self-attention and permutation-invariant pooling</li><li>Variational Monte Carlo optimization and few-body benchmarks</li></ul></article>
+<article class="note" id="qmc">
+<span class="status">Planned technical note</span>
+<h2>Stochastic-series-expansion quantum Monte Carlo</h2>
+<p>A step-by-step introduction to the SSE formulation used in my spin–valley calculations. The emphasis will be on how the algorithm is actually constructed: from the high-temperature expansion and operator-string representation to linked vertices, Monte Carlo updates, and estimators for thermodynamic observables.</p>
+<ul class="note-outline">
+<li>Partition-function expansion and the operator-string configuration space</li>
+<li>Bond decomposition, diagonal updates, and the no-branching basis</li>
+<li>Directed-loop updates and open-walk updates when transverse fields break spin conservation</li>
+<li>Counting estimators, winding numbers, and the helicity modulus</li>
+<li>Binning, finite-size analysis, and BKT transition-temperature extraction</li>
+</ul>
+<p class="paired-link">Paired project: <a href="../code/#qmc">Spin–valley SSE quantum Monte Carlo →</a></p>
+</article>
+<article class="note" id="black-hole">
+<span class="status">Planned explanatory note</span>
+<h2>Black-hole information paradox through holographic entanglement entropy</h2>
+<p>An accessible route from holographic entanglement entropy to the Page curve and island prescription. The note will focus on how competing Ryu–Takayanagi / quantum-extremal surfaces are calculated and how the same framework changes in AdS/BCFT, codimension-two brane, higher-curvature, and cone-holography settings.</p>
+<ul class="note-outline">
+<li>Entanglement entropy, extremal surfaces, and generalized entropy</li>
+<li>The Page curve and why semiclassical Hawking radiation creates an information problem</li>
+<li>Island saddles and competition between extremal surfaces</li>
+<li>Codimension-two branes, AdS/BCFT, curvature-squared gravity, and cone holography</li>
+<li>Numerical strategies for time-dependent extremal-surface calculations</li>
+</ul>
+<p class="paired-link">Paired project: <a href="../code/#black-hole">Holographic entanglement and Page-curve numerics →</a></p>
+</article>
+</div>
+</section>
 </main>
 <footer class="site-footer"><div class="container footer-row"><div>Dongqi Li · Research Notes</div><div class="footer-links"><a href="../">Home</a><a href="../code/">Code</a></div></div></footer>
 </body>

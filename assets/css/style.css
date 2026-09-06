@@ -238,3 +238,26 @@ a:hover { color: var(--accent-dark); }
   .education-head { display: block; }
   .education-head span { display: block; margin-top: 2px; }
 }
+
+
+/* Intro portrait */
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 46px;
+  align-items: center;
+}
+.intro-photo img {
+  display: block;
+  width: 190px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 24%;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+}
+@media (max-width: 720px) {
+  .intro-grid { grid-template-columns: 1fr; gap: 28px; }
+  .intro-photo { order: -1; }
+  .intro-photo img { width: 150px; }
+}

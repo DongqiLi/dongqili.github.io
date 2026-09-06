@@ -6,9 +6,9 @@ Personal academic website for **Dongqi Li**, Ph.D. student in Physics at the Uni
 
 ## Pages
 
-- **Home** — current research, education, publications, and selected presentations
-- **Research Notes** — longer-form notes on SSE quantum Monte Carlo and holographic entanglement / the black-hole information paradox
-- **Code** — research-code pages paired with the two research-note topics
+- **Home** — current research, education, publications, and presentations
+- **Research Notes** — planned notes on anyon neural quantum states, SSE quantum Monte Carlo, and holographic entanglement / the black-hole information paradox
+- **Code** — planned public repositories for spin–valley SSE QMC and holographic entanglement / Page-curve numerics
 - **CV** — academic curriculum vitae
 
 ## Repository structure
@@ -24,7 +24,8 @@ Personal academic website for **Dongqi Li**, Ph.D. student in Physics at the Uni
 │   ├── css/
 │   │   └── style.css
 │   ├── img/
-│   │   └── favicon.svg
+│   │   ├── favicon.svg
+│   │   └── profile.jpg
 │   └── cv/
 │       └── Dongqi_Li_Academic_CV.pdf
 ├── 404.html
