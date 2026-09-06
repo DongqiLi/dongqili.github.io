@@ -8,7 +8,34 @@
 <title>Dongqi Li | Physics</title>
 <link href="https://dongqili.github.io/" rel="canonical"/>
 <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="assets/css/style.css?v=20260906-2" rel="stylesheet"/>
+<style>
+/* Force portrait sizing and bypass stale cached CSS */
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  gap: 40px;
+  align-items: start;
+}
+.intro-photo {
+  width: 150px;
+  justify-self: end;
+}
+.intro-photo img {
+  display: block;
+  width: 150px !important;
+  max-width: 150px !important;
+  height: auto !important;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 24%;
+}
+@media (max-width: 650px) {
+  .intro-grid { grid-template-columns: 1fr; gap: 24px; }
+  .intro-photo { order: -1; width: 125px; justify-self: start; }
+  .intro-photo img { width: 125px !important; max-width: 125px !important; }
+}
+</style>
 </head>
 <body>
 <header class="site-header">
